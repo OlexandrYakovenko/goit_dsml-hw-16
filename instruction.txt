@@ -1,0 +1,28 @@
+instruction
+Потрібен Python 3.11.9
+requirements.txt знаходиться тут.
+
+
+Робочі інструкції, які виконував я (нижче)
+======================================================================
+"C:\Program Files\Python311\python.exe" -m venv my-streamlit-env-311
+
+cd "D:\python game\goit_dsml-hw-16\my-streamlit-env\my-streamlit-env-311\Scripts"
+activate.bat
+python --version
+
+pip --require-virtualenv -v  install tensorflow==2.15.0
+pip show tensorflow
+pip show keras
+pip --require-virtualenv -v  install streamlit
+
+pip show streamlit
+pip --require-virtualenv -v  install matplotlib
+pip show matplotlib
+
+pip list
+pip freeze > requirements.txt
+
+
+streamlit run test.py
+
